@@ -1,0 +1,69 @@
+.branches__list {
+  width: 100%;
+  max-width: 483px;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #1d383f;
+  border-radius: 16px;
+}
+
+.branches__item {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.branches__address {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.35em;
+  letter-spacing: 0;
+  font-family: Jost, sans-serif;
+  font-weight: 400;
+}
+
+.branches__phone {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.35em;
+  letter-spacing: 0;
+  font-family: Jost, sans-serif;
+  font-weight: 400;
+}
+
+.branches__phone--secondary {
+  font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+  .branches__list {
+    width: 100%;
+    max-width: none;
+    flex-direction: row;
+  }
+
+  .branches__item {
+    max-width: 289.33px;
+    width: 100%;
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .branches {
+    width: 100%;
+  }
+
+  .branches__list {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .branches__item {
+    flex-grow: 1;
+  }
+}
