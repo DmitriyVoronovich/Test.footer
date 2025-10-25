@@ -24,7 +24,7 @@ html {
   gap: 28px;
 }
 
-.footer__info {
+.footer__navigation {
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
@@ -148,7 +148,7 @@ html {
     flex-direction: column;
   }
 
-  .footer__info {
+  .footer__navigation {
     flex-direction: column;
     gap: 32px;
   }
