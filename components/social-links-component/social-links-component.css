@@ -8,7 +8,7 @@
 .social-links__item {
   width: 100%;
   height: 52px;
-  background: #1d383f;
+  background: var(--secondary);
   border-radius: 12px;
   display: flex;
   justify-content: center;
