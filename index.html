@@ -6,15 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="components/menu-component/menu-component.css">
-  <link rel="stylesheet" href="components/branches-component/branches-component.css">
-  <link rel="stylesheet" href="components/social-links-component/social-links-component.css">
-  <link rel="stylesheet" href="components/footer-logo-component/footer-logo-component.css">
-  <link rel="stylesheet" href="components/footer-disclaimer-component/footer-disclaimer-component.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -35,35 +31,133 @@
 
 <div class="footer">
   <div class="container">
-  <section class="footer__top">
-    <div class="footer__navigation">
-    <footer-logo-component></footer-logo-component>
-    <div class="footer__menu">
-      <menu-component></menu-component>
-    </div>
-    </div>
-    <div class="footer__contact">
-      <branches-component></branches-component>
-      <social-links-component></social-links-component>
-    </div>
-  </section>
-  <section class="footer__middle">
-    <div class="footer__policy">
-      <p class="footer__policy-item">© Happy Grins 2025</p>
-      <p class="footer__policy-item">Политика обработки персональных данных</p>
-    </div>
-    <footer-disclaimer-component></footer-disclaimer-component>
-  </section>
-  <section class="footer__notice">
-    <p class="footer__notice-text">Имеются противопоказания. Необходимо проконсультироваться со специалистом</p>
-  </section>
+    <section class="footer__top">
+      <div class="footer__navigation">
+        <div class="footer-logo">
+          <img class="footer-logo__img" src="accepts/logo.svg" alt="Логотип">
+          <p class="footer-logo__info">
+            Лицензия на осуществление медицинской
+            деятельности Л041-01137-77/00496389
+            от 15.06.2022г.
+          </p>
+        </div>
+        <div class="footer__menu">
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="/" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Цены</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Акции</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Врачи</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Наши работы</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Отзывы</a>
+              </li>
+            </ul>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="/" class="menu__link">О нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Документы</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Статьи</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Частые вопросы</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Вакансии</a>
+              </li>
+              <li class="menu__item">
+                <a href="/" class="menu__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__contact">
+        <div class="branches">
+          <ul class="branches__list">
+            <li class="branches__item">
+              <span class="branches__address">ул. Лесная, д.23, корп 100.</span>
+              <span class="branches__phone">тел.: +7 917 017-04-22</span>
+            </li>
+            <li class="branches__item">
+              <span class="branches__address">ул. Центральная, д.45.</span>
+              <span class="branches__phone">тел.: +7 917 123-45-67</span>
+            </li>
+            <li class="branches__item">
+              <span class="branches__address">Проспект Победы, д.12</span>
+              <span class="branches__phone branches__phone--secondary">тел.: +7 917 987-65-43</span>
+            </li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <ul class="social-links__list">
+            <li class="social-links__item">
+              <a href="/">
+                <img src="accepts/vk.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="/">
+                <img src="accepts/telegram.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="/">
+                <img src="accepts/ok.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="/">
+                <img src="accepts/instagram.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a href="/">
+                <img src="accepts/facebook.svg" alt="Иконка социальной сети">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="footer__middle">
+      <div class="footer__policy">
+        <p class="footer__policy-item">© Happy Grins 2025</p>
+        <p class="footer__policy-item">Политика обработки персональных данных</p>
+      </div>
+      <div class="footer-disclaimer">
+        <p class="footer-disclaimer__text">
+          Материалы, размещенные на данной странице, носят информационный характер и предназначены
+          для образовательных целей. Посетители сайта не должны использовать их в качестве медицинских рекомендаций.
+          Определение диагноза и выбор методики лечения остается исключительной прерогативой вашего лечащего врача.
+        </p>
+        <p class="footer-disclaimer__text">
+          Администрация принимает все меры для своевременного обновления прайс-листа, размещенного на сайте.
+          Однако, чтобы избежать возможных недоразумений, рекомендуем уточнять стоимость услуг в регистратуре
+          или по контактному телефону. Размещенный прайс не является офертой.
+          Медицинские услуги оказываются на основании договора.
+        </p>
+      </div>
+    </section>
+    <section class="footer__notice">
+      <p class="footer__notice-text">Имеются противопоказания. Необходимо проконсультироваться со специалистом</p>
+    </section>
   </div>
 </div>
-  <script type="module" src="./components/menu-component/menu-component.js"></script>
-  <script type="module" src="./components/branches-component/branches-component.js"></script>
-  <script type="module" src="./components/social-links-component/social-links-component.js"></script>
-  <script type="module" src="./components/footer-logo-component/footer-logo-component.js"></script>
-  <script type="module" src="./components/footer-disclaimer-component/footer-disclaimer-component.js"></script>
 </body>
 
 </html>

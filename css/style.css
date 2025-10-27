@@ -1,4 +1,9 @@
 @import url('variables.css');
+@import url('branches-component.css');
+@import url('footer-disclaimer-component.css');
+@import url('footer-logo-component.css');
+@import url('menu-component.css');
+@import url('social-links-component.css');
 
 * {
   box-sizing: border-box;
