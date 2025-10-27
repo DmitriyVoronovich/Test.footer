@@ -76,10 +76,16 @@
   .branches__list {
     flex-wrap: wrap;
     gap: 12px;
+    flex-direction: row;
+    column-gap: 77px;
   }
 
   .branches__item {
-    max-width: 100%;
-    flex-grow: 1;
+    max-width: none;
+    width: auto;
+    flex-grow: 0;
+    flex-basis: auto;
+    flex-shrink: 0;
+    min-width: min-content;
   }
 }
