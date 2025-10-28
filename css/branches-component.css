@@ -12,6 +12,7 @@
 }
 
 .branches__item {
+  min-width: 256px;
   display: flex;
   flex-direction: column;
   gap: 2px;
@@ -43,27 +44,19 @@
 
 @media (max-width: 1200px) {
   .branches__list {
-    width: 100%;
     max-width: none;
-    flex-direction: row;
-  }
-
-  .branches__item {
-    max-width: 289.33px;
     width: 100%;
-    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
 @media (max-width: 826px) {
   .branches__list {
-    flex-wrap: wrap;
     gap: 24px;
   }
 
   .branches__item {
-    max-width: 289.33px;
-    width: 100%;
     flex-shrink: 1;
   }
 }
@@ -74,10 +67,8 @@
   }
 
   .branches__list {
-    flex-wrap: wrap;
     gap: 12px;
     flex-direction: row;
-    column-gap: 77px;
   }
 
   .branches__item {
@@ -86,6 +77,5 @@
     flex-grow: 0;
     flex-basis: auto;
     flex-shrink: 0;
-    min-width: min-content;
   }
 }

@@ -15,3 +15,7 @@
   align-items: center;
   cursor: pointer;
 }
+
+.social-links__link {
+  padding-top: 3px;
+}
