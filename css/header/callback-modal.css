@@ -1,0 +1,114 @@
+.callback-modal {
+  width: 100%;
+  max-width: 437px;
+  border-radius: 30px;
+  padding: 48px;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.f-html:has(.callback-modal) {
+  padding: 48px !important;
+}
+
+.callback-modal__close-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+  color: var(--gray-100);
+  opacity: 1;
+  z-index: 10;
+  background-color: var(--primary-text);
+  border: none;
+
+  top: 24px;
+  right: 24px;
+}
+
+.f-button.is-close-button {
+  display: none;
+}
+
+.callback-modal__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.callback-modal__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 114.99999999999999%;
+  text-align: center;
+  color: var(--primary-80);
+}
+
+.callback-modal__description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  text-align: center;
+  color: var(--gray-70);
+}
+
+.callback-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.callback-modal__input {
+  width: 100%;
+  height: 70px;
+  border: 1px solid var(--primary-30);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.callback-modal__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: var(--gray-50);
+}
+
+.callback-modal__policy {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 135%;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--gray-70);
+}
+
+.callback-modal__policy-link {
+  color: var(--primary-50);
+  cursor: pointer;
+}
+
+.callback-modal__submit-btn {
+  width: 100%;
+  height: 68px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 145%;
+  text-align: center;
+  vertical-align: middle;
+  color: var(--primary-text);
+  background-color:  var(--primary-50);
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.callback-modal__submit-btn:hover {
+  background-color: var(--primary-40);
+}

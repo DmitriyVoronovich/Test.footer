@@ -1,18 +1,27 @@
 @import url('variables.css');
-@import url('branches-component.css');
-@import url('footer-disclaimer-component.css');
-@import url('footer-logo-component.css');
-@import url('menu-component.css');
-@import url('social-links-component.css');
+@import url('footer/branches-component.css');
+@import url('footer/footer-disclaimer-component.css');
+@import url('footer/footer-logo-component.css');
+@import url('footer/menu-component.css');
+@import url('footer/social-links-component.css');
+@import url('header/header.css');
+@import url('header/callback-modal.css');
+@import url('header/success-modal.css');
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  font-family: Jost, sans-serif;
 }
 
 html {
   font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 .footer {
@@ -20,7 +29,7 @@ html {
   justify-content: center;
   width: 100%;
   padding: 70px 0 0;
-  background: var(--primary);
+  background: var(--footer-primary);
 }
 
 .container {
@@ -66,7 +75,7 @@ html {
 }
 
 .footer__policy-item {
-  color: var(--secondary-text);
+  color: var(--footer-secondary-text);
   font-size: 16px;
   line-height: 1.35em;
   letter-spacing: 0;

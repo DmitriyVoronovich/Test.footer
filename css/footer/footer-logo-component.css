@@ -11,7 +11,7 @@
 }
 
 .footer-logo__info {
-  color: var(--secondary-text);
+  color: var(--footer-secondary-text);
   letter-spacing: 0;
   font-family: Jost, sans-serif;
   font-weight: 400;

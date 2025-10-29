@@ -1,7 +1,18 @@
 :root {
-  --primary: #112D35;
-  --secondary: #1D383F;
+  --footer-primary: #112D35;
+  --footer-secondary: #1D383F;
   --border: rgba(255, 255, 255, 0.2);
   --primary-text: #FFFFFF;
-  --secondary-text: rgba(255, 255, 255, 0.6);
+  --footer-secondary-text: rgba(255, 255, 255, 0.6);
+
+  --primary-30: rgba(135, 191, 207, 1);
+  --primary-40: rgba(95, 170, 191, 1);
+  --primary-50: rgba(55, 149, 175, 1);
+  --primary-60: rgba(107, 145, 170, 1);
+  --primary-80: #3C5463;
+  --background-primary: rgba(243, 247, 250, 1);
+
+  --gray-50: rgba(126, 130, 139, 1);
+  --gray-70: rgba(76, 78, 83, 1);
+  --gray-100: rgba(13, 13, 14, 1);
 }
