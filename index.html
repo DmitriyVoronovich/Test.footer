@@ -45,13 +45,13 @@
               <a class="header__nav-link" href="/">О нас</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="/">Услуги</a>
+              <a class="header__nav-link header__nav-link--active" href="/">Услуги</a>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="/">Цены</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="/">Акции</a>
+              <a class="header__nav-link" href="/">Акции</a><div class="header__nav-link-count">6</div>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="/">Врачи</a>
@@ -60,7 +60,7 @@
               <a class="header__nav-link" href="/">Наши работы</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="/">Отзывы</a>
+              <a class="header__nav-link" href="/">Отзывы</a><span class="header__nav-link-reviews-count">+1345</span>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="/">Контакты</a>
@@ -72,9 +72,75 @@
               <a class="header__nav-link" href="/">Статьи</a>
             </li>
             <li class="header__nav-item">
+              <a class="header__nav-link" href="/">Частые вопросы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="/">Вакансии</a>
+            </li>
+            <li class="header__nav-item">
               <a class="header__nav-link" href="/">Ещё</a>
             </li>
           </ul>
+          <div class="header__services">
+            <ul class="header__services-list">
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Имплантация зубов</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Профессиональная гигиена</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Диагностика</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Лечение зубов</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Отбеливание зубов</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Исправление прикуса</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Брекеты</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Элайнеры</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Удаление зубов</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Протезирование зубов</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Виниры</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Лечение десен</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Реставрация зубов</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+              <li class="header__services-item">
+                <a class="header__services-link" href="/">Гнатология</a>
+                <img class="header__services-arrow" src="accepts/arrow_down.svg" alt="">
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="header__contacts">
@@ -337,6 +403,26 @@
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
 <script>
+  const burger = document.querySelector('.header__burger');
+  const headerServices = document.querySelector('.header__services');
+  const navList = document.querySelector('.header__nav-list');
+  const navWrapper = document.querySelector('.header__nav');
+  const navItems = document.querySelectorAll('.header__nav-item');
+  const navLinks = document.querySelectorAll('.header__nav-link');
+
+  burger.addEventListener('click', () => {
+    navList.classList.toggle('header__nav-list--open');
+    navWrapper.classList.toggle('header__nav--open');
+    headerServices.classList.toggle('header__services--open');
+    navItems.forEach(item => {
+      item.classList.toggle('header__nav-item--open');
+    });
+    navLinks.forEach(item => {
+      item.classList.toggle('header__nav-link--open');
+    });
+    burger.classList.toggle('header__burger--active');
+  });
+
   Fancybox.bind("[data-fancybox]", {
     closeButton: "none"
   });
