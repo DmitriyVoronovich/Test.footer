@@ -51,7 +51,8 @@
               <a class="header__nav-link" href="/">Цены</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="/">Акции</a><div class="header__nav-link-count">6</div>
+              <a class="header__nav-link" href="/">Акции</a>
+              <div class="header__nav-link-count">6</div>
             </li>
             <li class="header__nav-item">
               <a class="header__nav-link" href="/">Врачи</a>
@@ -145,10 +146,10 @@
       </div>
       <div class="header__contacts">
         <div class="header__contacts-info">
-          <div class="header__contacts-row">
-            <div class="header__contacts-phone">8 900 123-23-23</div>
-            <div class="header__contacts-arrow">
-              <svg class="header__contacts-arrow-img" width="9" height="5" viewBox="0 0 9 5" fill="currentColor"
+          <div class="header__contacts-info-row">
+            <div class="header__contacts-info-phone">8 900 123-23-23</div>
+            <div class="header__contacts-info-arrow">
+              <svg class="header__contacts-info-arrow-img" width="9" height="5" viewBox="0 0 9 5" fill="currentColor"
                    xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M8.11126 0.230211C7.96293 0.082762 7.76228 0 7.55313 0C7.34399 0 7.14334 0.082762 6.99501
@@ -163,28 +164,39 @@
               </svg>
             </div>
           </div>
-          <div class="header__contacts-callback" data-fancybox data-src="#callback-modal">Заказать звонок</div>
+          <div class="header__contacts-info-callback" data-fancybox data-src="#callback-modal">Заказать звонок</div>
         </div>
-        <button class="header__contacts-btn">Запись онлайн</button>
-        <button class="header__contacts-social">
-          <svg class="header__contacts-social-img" width="20" height="18" viewBox="0 0 20 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_2045_3811)">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M4.5 16C5.88071 16 7 14.8807 7 13.5C7 12.1193 5.88071 11 4.5 11C3.11929 11 2 12.1193 2 13.5C2 14.8807 3.11929 16 4.5 16ZM4.5 18C6.98528 18 9 15.9853 9 13.5C9 11.0147 6.98528 9 4.5 9C2.01472 9 0 11.0147 0 13.5C0 15.9853 2.01472 18 4.5 18Z" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5 16C16.8807 16 18 14.8807 18 13.5C18 12.1193 16.8807 11 15.5 11C14.1193 11 13 12.1193 13 13.5C13 14.8807 14.1193 16 15.5 16ZM15.5 18C17.9853 18 20 15.9853 20 13.5C20 11.0147 17.9853 9 15.5 9C13.0147 9 11 11.0147 11 13.5C11 15.9853 13.0147 18 15.5 18Z" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14H8V12H12V14Z" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M5 2C3.34315 2 2 3.34315 2 5V13H0V5C0 2.23858 2.23858 0 5 0H6C6.55228 0 7 0.447715 7 1C7 1.55228 6.55228 2 6 2H5Z" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M15 2C16.6569 2 18 3.34315 18 5V13H20V5C20 2.23858 17.7614 0 15 0H14C13.4477 0 13 0.447715 13 1C13 1.55228 13.4477 2 14 2H15Z" />
-            </g>
-            <defs>
-              <clipPath id="clip0_2045_3811">
-                <rect width="20" height="18" fill="white"/>
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-        <button class="header__contacts-social">
-          <svg class="header__contacts-social-img" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21.7104 20.2904L18.0004 16.6104C19.4405 14.8148 20.1379 12.5357 19.9492
+        <div class="header__contacts-actions">
+          <div class="header__contacts-actions-row">
+            <button class="header__contacts-actions-btn">Запись онлайн</button>
+            <button class="header__contacts-actions-social">
+              <svg class="header__contacts-actions-social-img" width="20" height="18" viewBox="0 0 20 18" fill="currentColor"
+                   xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2045_3811)">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.5 16C5.88071 16 7 14.8807 7 13.5C7 12.1193 5.88071 11 4.5 11C3.11929 11 2 12.1193 2 13.5C2 14.8807 3.11929 16 4.5 16ZM4.5 18C6.98528 18 9 15.9853 9 13.5C9 11.0147 6.98528 9 4.5 9C2.01472 9 0 11.0147 0 13.5C0 15.9853 2.01472 18 4.5 18Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15.5 16C16.8807 16 18 14.8807 18 13.5C18 12.1193 16.8807 11 15.5 11C14.1193 11 13 12.1193 13 13.5C13 14.8807 14.1193 16 15.5 16ZM15.5 18C17.9853 18 20 15.9853 20 13.5C20 11.0147 17.9853 9 15.5 9C13.0147 9 11 11.0147 11 13.5C11 15.9853 13.0147 18 15.5 18Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14H8V12H12V14Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M5 2C3.34315 2 2 3.34315 2 5V13H0V5C0 2.23858 2.23858 0 5 0H6C6.55228 0 7 0.447715 7 1C7 1.55228 6.55228 2 6 2H5Z"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M15 2C16.6569 2 18 3.34315 18 5V13H20V5C20 2.23858 17.7614 0 15 0H14C13.4477 0 13 0.447715 13 1C13 1.55228 13.4477 2 14 2H15Z"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_2045_3811">
+                    <rect width="20" height="18" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div class="header__contacts-actions-search">
+            <input class="header__contacts-actions-search-input" placeholder="Поиск"/>
+            <button class="header__contacts-actions-search-btn">
+              <svg class="header__contacts-actions-search-img" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.7104 20.2904L18.0004 16.6104C19.4405 14.8148 20.1379 12.5357 19.9492
             10.2417C19.7605 7.94769 18.7001 5.81318 16.9859 4.27704C15.2718 2.7409 13.0342 1.9199 10.7333
             1.98286C8.43243 2.04582 6.24311 2.98795 4.61553 4.61553C2.98795 6.24311 2.04582 8.43243 1.98286
             10.7333C1.9199 13.0342 2.7409 15.2718 4.27704 16.9859C5.81318 18.7001 7.94769 19.7605 10.2417
@@ -196,9 +208,11 @@
             3.8648 10.9926 4.1349 9.63476C4.40499 8.27689 5.07168 7.02961 6.05065 6.05065C7.02961 5.07168 8.27689
             4.40499 9.63476 4.1349C10.9926 3.8648 12.4001 4.00342 13.6792 4.53324C14.9583 5.06305 16.0515 5.96026
             16.8207 7.1114C17.5899 8.26255 18.0004 9.61592 18.0004 11.0004C18.0004 12.8569 17.2629 14.6374 15.9501
-            15.9501C14.6374 17.2629 12.8569 18.0004 11.0004 18.0004Z" />
-          </svg>
-        </button>
+            15.9501C14.6374 17.2629 12.8569 18.0004 11.0004 18.0004Z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
         <button class="header__contacts-dropdown">
           <span class="header__contacts-dropdown-text">Контакты</span>
           <svg class="header__contacts-dropdown-img" width="9" height="5" viewBox="0 0 9 5" fill="currentColor"
@@ -402,27 +416,8 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/app.js"></script>
 <script>
-  const burger = document.querySelector('.header__burger');
-  const headerServices = document.querySelector('.header__services');
-  const navList = document.querySelector('.header__nav-list');
-  const navWrapper = document.querySelector('.header__nav');
-  const navItems = document.querySelectorAll('.header__nav-item');
-  const navLinks = document.querySelectorAll('.header__nav-link');
-
-  burger.addEventListener('click', () => {
-    navList.classList.toggle('header__nav-list--open');
-    navWrapper.classList.toggle('header__nav--open');
-    headerServices.classList.toggle('header__services--open');
-    navItems.forEach(item => {
-      item.classList.toggle('header__nav-item--open');
-    });
-    navLinks.forEach(item => {
-      item.classList.toggle('header__nav-link--open');
-    });
-    burger.classList.toggle('header__burger--active');
-  });
-
   Fancybox.bind("[data-fancybox]", {
     closeButton: "none"
   });
