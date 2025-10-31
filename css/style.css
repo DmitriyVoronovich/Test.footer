@@ -16,6 +16,10 @@
   font-family: Jost, sans-serif;
 }
 
+*:hover {
+  transition: all 0.3s ease;
+}
+
 html {
   font-family: sans-serif;
 }

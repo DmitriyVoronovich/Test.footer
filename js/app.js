@@ -20,3 +20,20 @@ burger.addEventListener('click', () => {
   });
   burger.classList.toggle('header__burger--active');
 });
+
+const infoRow = document.querySelector('.header__contacts-info-row');
+const addresses = document.querySelector('.header-contacts__addresses');
+const dropdown = document.querySelector('.header__contacts-dropdown');
+
+infoRow.addEventListener('mouseenter', () => {
+  addresses.classList.add('header-contacts__addresses--open');
+});
+dropdown.addEventListener('click', () => {
+  addresses.classList.toggle('header-contacts__addresses--open');
+});
+dropdown.addEventListener('click', () => {
+  dropdown.classList.toggle('header__contacts-dropdown--open');
+});
+infoRow.addEventListener('mouseleave', () => {
+  addresses.classList.remove('header-contacts__addresses--open');
+});

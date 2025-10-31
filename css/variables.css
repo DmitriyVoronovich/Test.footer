@@ -9,10 +9,11 @@
   --primary-40: rgba(95, 170, 191, 1);
   --primary-50: rgba(55, 149, 175, 1);
   --primary-60: rgba(107, 145, 170, 1);
-  --primary-80: #3C5463;
+  --primary-80: rgba(22, 60, 70, 1);
   --background-primary: rgba(243, 247, 250, 1);
 
   --gray-50: rgba(126, 130, 139, 1);
   --gray-70: rgba(76, 78, 83, 1);
+  --gray-80: rgba(50, 52, 56, 1);
   --gray-100: rgba(13, 13, 14, 1);
 }

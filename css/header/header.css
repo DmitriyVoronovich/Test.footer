@@ -1,3 +1,5 @@
+@import url('header-contacts-addresses.css');
+
 .header {
   padding: 32px 0;
   display: flex;
@@ -35,6 +37,12 @@
   background-color: var(--primary-50);
 }
 
+.header__logo-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .header__logo-img {
   width: 66.19px;
   color: var(--primary-text);
@@ -56,11 +64,12 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .header__nav-item:hover {
   background: var(--primary-50);
-  border-radius: 12px;
+  border-radius: 8px;
 }
 
 .header__nav-link {
@@ -104,6 +113,7 @@
 }
 
 .header__contacts {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -120,6 +130,7 @@
 .header__contacts-info-row {
   display: flex;
   height: 22px;
+  align-items: center;
 }
 
 .header__contacts-info-phone {
@@ -134,7 +145,6 @@
 
 .header__contacts-info-row:hover .header__contacts-info-phone {
   color: var(--primary-40);
-
 }
 
 .header__contacts-info-row:hover .header__contacts-info-arrow-img {
@@ -250,6 +260,20 @@
   border: none;
   border-radius: 12px;
   cursor: pointer;
+}
+
+.header__contacts-dropdown--open {
+  background-color: var(--primary-50);
+  color: var(--primary-text);
+}
+
+.header__contacts-dropdown--open .header__contacts-dropdown-img {
+  color: var(--primary-text);
+  transform: rotateX(180deg);
+}
+
+.header__contacts-dropdown--open .header__contacts-dropdown-text {
+  color: var(--primary-text);
 }
 
 .header__contacts-dropdown:hover {
@@ -453,7 +477,7 @@
 
   .header__nav-list.header__nav-list--open {
     display: flex;
-    align-items: end;
+    align-items: start;
   }
 
   .header__nav-item.header__nav-item--open {
@@ -514,6 +538,10 @@
 }
 
 @media (max-width: 769px) {
+  .header__nav-list.header__nav-list--open {
+    align-items: end;
+  }
+
   .header__main {
     max-width: 648px;
   }
@@ -523,7 +551,18 @@
   }
 }
 
+@media (max-width: 748px) {
+  .header__nav-list.header__nav-list--open {
+    align-items: start;
+    padding-left: 40px;
+  }
+}
+
 @media (max-width: 704px) {
+  .header__nav-list.header__nav-list--open {
+    align-items: start;
+    padding-left: 24px;
+  }
 
   .header__main {
     height: 40px;
